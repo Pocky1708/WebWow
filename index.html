@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>This website for you</title>
+        <style type="text/css">
+            body{
+                background-image: url(Flowers-HTML-CSS-main/1141163.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+
+        <link rel="stylesheet" href="./page1.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Message to you</h1>
+            <h2>Send by me</h2>
+            <p>อาจไม่ได้สวยงามนักแต่ก็อยากจะให้ได้ชม</p>
+
+            <div class="btn">
+                <a href="javascript:void(0);" onclick="fadeAndRedirect('./start.html')">Start Journey</a>
+            </div>
+        </div>
+        <script>
+            function fadeAndRedirect(url) {
+                document.body.classList.add("fade-out");
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 2000);
+            }
+        </script>
+    </body>
+</html>
